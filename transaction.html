@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Add transaction</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='transaction.css'>
+</head>
+<body>
+    <div id="action-btns-div">
+        <button id="action-btn">Add</button>
+        <button id="delete-btn">Delete</button>
+    </div>
+    <div id="section1">
+        <div id="types-row">
+            <div class="type selected-type" id="expense">Expense</div>
+            <div class="type" id="income">Income</div>
+        </div>
+        <input type="text" id="title" class="textfield" placeholder="Title">
+        <input type="text" id="description" class="textfield" placeholder="Description">
+        <input type="number" id="amount" class="textfield" placeholder="Amount" min="0" onkeypress="return event.charCode != 45">
+        <div id="date-time-row">
+            <input type="date" id="date">
+            <input type="time" id="time">
+        </div>
+    </div>
+    <div id="section2">
+        <div class="select-text">Select account</div>
+        <div id="accounts">
+            <div id="cash" class="account-card selected-account">
+                <div class="account-icon">
+                    <img src="cash.png">
+                </div>
+                <div class="account-text">Cash</div>
+            </div>
+            <div id="bank" class="account-card">
+                <div class="account-icon">
+                    <img src="bank.png">
+                </div>
+                <div class="account-text">Bank</div>
+            </div>
+        </div>
+        <div class="select-text">Select category</div>
+        <div id="categories">
+            <!-- <div class="category">Add new</div> -->
+        </div>
+    </div>
+
+    <script src='transaction.js'></script>
+</body>
+</html>

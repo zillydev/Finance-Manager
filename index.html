@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Finance Manager</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div id="add-btn-div">
+        <button id="add-btn" class="fontsize32">+</button>
+    </div>
+    <div id="main">
+        <div id="sidebar">
+            <div class="sidebar-button">
+                <div id="sidebar-button-home" class="sidebar-button-icon selected-sidebar-button">
+                    <img src="home.png">
+                </div>
+                <div class="sidebar-button-text">
+                    Home
+                </div>
+            </div>
+            <div class="sidebar-button">
+                <div id="sidebar-button-accounts" class="sidebar-button-icon">
+                    <img src="accounts.png">
+                </div>
+                <div class="sidebar-button-text">
+                    Accounts
+                </div>
+            </div>
+            <div class="sidebar-button">
+                <div id="sidebar-button-categories" class="sidebar-button-icon">
+                    <img src="categories.png">
+                </div>
+                <div class="sidebar-button-text">
+                    Categories
+                </div>
+            </div>
+        </div>
+        <div id="main-section">
+            <div id="home">
+                <div id="balance-section">
+                    <div id="balance-card">
+                        <div id="balance">
+                            <div class="fontsize18 fontweight600 paddingbottom16">Total balance</div>
+                            <div class="fontsize36 fontweight800" id="balance-amount">₹0.00</div>
+                        </div>
+                        <div class="fontsize18 fontweight600 paddingbottom16">Total</div>
+                        <div id="income-expense-section">
+                            <div id="income">
+                                <div class="fontsize12 fontweight600"><span class="green-color">▼</span> Income</div>
+                                <div class="fontsize24 fontweight800" id="income-amount">+₹0.00</div>
+                            </div>
+                            <div id="expense">
+                                <div class="fontsize12 fontweight600"><span class="red-color">▲</span> Expense</div>
+                                <div class="fontsize24 fontweight800" id="expense-amount">-₹0.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="history-section"></div>
+            </div>
+            <div id="categories"></div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #201a18;
+}
+
+#add-btn-div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+#add-btn {
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: #7b2e0d;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font: bolder;
+    font-size: 40px;
+}
+
+#add-btn:hover {
+    filter: brightness(1.17);
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 80px;
+    border-right: 2px solid #332d2c;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.selected-sidebar-button {
+    background-color: #5d4035;
+}
+
+.sidebar-button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 18px;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.sidebar-button-icon img {
+    width: auto;
+    height: 100%;
+    filter: brightness(0) invert(1);
+}
+
+.sidebar-button-text {
+    color: white;
+    margin: 2px;
+}
+
+#main-section {
+    width: 100%;
+}
+
+#home {
+    flex: 1;
+    color: #34495e;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#balance-card {
+    margin: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    color: #ffdbcf;
+    background-color: #7b2e0d;
+    display: flex;
+    flex-direction: column;
+}
+
+#balance {
+    margin-bottom: 50px;
+}
+
+.green-color {
+    color: green;
+}
+
+.red-color {
+    color: red;
+}
+
+#income-expense-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#history-section {
+    padding: 25px;
+    color: white;
+    overflow-y: auto;
+    margin-bottom: 100px;
+}
+
+.history-tile {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 2px solid #332d2c;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.history-tile:hover {
+    background-color: #332d2c;
+}
+
+.history-tile-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-tile-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    color: #bfbdbd;
+}
+
+#accounts {
+    width: 100%;
+}
+
+#accounts-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.account-card {
+    margin: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    color: black;
+    background-color: #ffdbd7;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-card-row1 {
+    display: flex;
+    justify-content: space-between;
+    color: #400014;
+    margin-bottom: 20px;
+}
+
+.account-card-row2 {
+    color: #400014;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.account-card-row3 {
+    color: #400014;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.account-card-row4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #703747;
+    margin-bottom: 10px;
+}
+
+.account-card-row5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #400014;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#categories {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px 15px;
+    color: white;
+    border-radius: 20px;
+    background-color: #53433e;
+    cursor: pointer;
+}
+
+.category:hover {
+    background-color: #5a4a46;
+}
+
+.category-description {
+    font-size: 14px;
+    color: #958783;
+}
+
+
+.fontsize12 {
+    font-size: 12px;
+}
+
+.fontsize14 {
+    font-size: 14px;
+}
+
+.fontsize16 {
+    font-size: 16px;
+}
+
+.fontsize18 {
+    font-size: 18px;
+}
+
+.fontsize20 {
+    font-size: 20px;
+}
+
+.fontsize24 {
+    font-size: 24px;
+}
+
+.fontsize32 {
+    font-size: 32px;
+}
+
+.fontsize36 {
+    font-size: 36px;
+}
+
+.fontweight600 {
+    font-weight: 600;
+}
+
+.fontweight800 {
+    font-weight: 800;
+}
+
+.paddingleft16 {
+    padding-left: 16px;
+}
+
+.paddingtop16 {
+    padding-top: 16px;
+}
+
+.paddingbottom16 {
+    padding-bottom: 16px;
+}
